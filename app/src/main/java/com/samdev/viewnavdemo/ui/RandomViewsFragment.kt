@@ -57,7 +57,7 @@ class RandomViewsFragment : Fragment() {
     private fun setupBlueNav() {
         // route to blue
         binding.btnRouteToBlue.setOnClickListener {
-            customNavigator.navigateForward(
+            customNavigator.navigateViews(
                 binding.viewParent,
                 binding.viewBlueMid
             )
@@ -65,7 +65,7 @@ class RandomViewsFragment : Fragment() {
 
         // final stage on blue
         binding.btnRouteToBlueFinal.setOnClickListener {
-            customNavigator.navigateForward(
+            customNavigator.navigateViews(
                 binding.viewBlueMid,
                 binding.viewBlueFinal
             )
@@ -75,14 +75,14 @@ class RandomViewsFragment : Fragment() {
 
     private fun setupRedNav() {
         binding.btnRouteToRed.setOnClickListener {
-            customNavigator.navigateForward(
+            customNavigator.navigateViews(
                 binding.viewParent,
                 binding.viewRedMid
             )
         }
 
         binding.btnRouteToRedFinal.setOnClickListener {
-            customNavigator.navigateForward(
+            customNavigator.navigateViews(
                 binding.viewRedMid,
                 binding.viewRedFinal
             )
