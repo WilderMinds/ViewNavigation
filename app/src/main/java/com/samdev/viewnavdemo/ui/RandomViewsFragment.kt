@@ -49,6 +49,7 @@ class RandomViewsFragment : Fragment() {
         // blue is just an arbitrary identifier
         setupBlueNav()
 
+        // red is just an arbitrary identifier
         setupRedNav()
     }
 
@@ -70,7 +71,6 @@ class RandomViewsFragment : Fragment() {
             )
         }
     }
-
 
 
     private fun setupRedNav() {

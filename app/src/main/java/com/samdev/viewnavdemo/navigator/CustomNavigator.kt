@@ -20,7 +20,7 @@ class CustomNavigator {
      */
     private fun navigate(viewNavigation: ViewNavigation, direction: Boolean) {
 
-        // TODO: 24/04/2021 direction will be reverse view animation
+        // TODO: 24/04/2021 direction will control the 'direction' of the navigation animation
 
         // outgoing view
         viewNavigation.from.visibility = View.GONE
@@ -30,6 +30,10 @@ class CustomNavigator {
     }
 
 
+    /**
+     * @param from the current visible page/viewGroup
+     * @param to the page/viewGroup you want to navigate to
+     */
     fun navigateForward(from: View, to: View) {
         val viewNavigation = ViewNavigation(from, to)
         navigationStack.push(viewNavigation)
@@ -37,6 +41,12 @@ class CustomNavigator {
     }
 
 
+    /**
+     * Notice that the `from` and `to` params are switched when creating
+     * the viewNavigation object.
+     *
+     * We do this when we want to move in the opposite/reverse direction
+     */
     private fun navigateBackwards(from: View, to: View) {
         val viewNavigation = ViewNavigation(from, to)
         navigate(viewNavigation, false)
