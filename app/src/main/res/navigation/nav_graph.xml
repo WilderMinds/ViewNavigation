@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/rootFragment">
+
+    <fragment
+        android:id="@+id/rootFragment"
+        android:name="com.samdev.viewnavdemo.ui.RootFragment"
+        android:label="fragment_root"
+        tools:layout="@layout/fragment_root" >
+        <action
+            android:id="@+id/action_rootFragment_to_sequentialViewsFragment"
+            app:destination="@id/sequentialViewsFragment"
+            app:popUpTo="@id/rootFragment" />
+        <action
+            android:id="@+id/action_rootFragment_to_randomViewsFragment"
+            app:destination="@id/randomViewsFragment"
+            app:popUpTo="@id/rootFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sequentialViewsFragment"
+        android:name="com.samdev.viewnavdemo.ui.SequentialViewsFragment"
+        android:label="fragment_sequential_views"
+        tools:layout="@layout/fragment_sequential_views" />
+    <fragment
+        android:id="@+id/randomViewsFragment"
+        android:name="com.samdev.viewnavdemo.ui.RandomViewsFragment"
+        android:label="fragment_random_views"
+        tools:layout="@layout/fragment_random_views" />
+</navigation>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.SequentialViewsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:text="View 1"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:background="@color/view_1"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/view_2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:text="View 2"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:background="@color/view_2"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/view_3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:text="View 3"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:background="@color/view_3"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/view_4"
+            android:layout_width="match_parent"
+            android:text="View 4"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:layout_height="300dp"
+            android:visibility="gone"
+            android:background="@color/view_4"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/view_5"
+            android:layout_width="match_parent"
+            android:text="View 5"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:layout_height="300dp"
+            android:background="@color/view_5"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/view_6"
+            android:layout_width="match_parent"
+            android:text="View 6"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:layout_height="300dp"
+            android:background="@color/view_6"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <Button
+            android:id="@+id/btn_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/previous"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
